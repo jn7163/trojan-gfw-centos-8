@@ -22,3 +22,17 @@ This script assumes that you start with a brand new server running CentOS 8.
 ## Detailed Explanation
 
 https://www.lionlibr.com/posts/trojan-gfw-centos-igniter-android.html
+
+## Troubleshooting
+
+On your Windows client, the Trojan Command Prompt window may show some error messages.
+
+On your CentOS server, these commands may show some error messages:
+
+```
+systemctl status trojan
+
+journalctl -u trojan
+
+tail /var/log/nginx/error.log
+```
