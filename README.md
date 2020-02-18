@@ -6,7 +6,7 @@
 sudo yum -y install wget && wget https://raw.githubusercontent.com/lionlibr/trojan-gfw-centos-8/master/install.sh && sudo bash install.sh
 ```
 
-### Overview
+## Overview
 
 This script assumes that you start with a brand new server running CentOS 8.
 
