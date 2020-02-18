@@ -18,3 +18,7 @@ This script assumes that you start with a brand new server running CentOS 8.
 2. Install and configure firewalld
 3. Install and configure nginx
 4. Install and configure Trojan
+
+## Detailed Explanation
+
+https://www.lionlibr.com/posts/trojan-gfw-centos-igniter-android.html
