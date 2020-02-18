@@ -1,0 +1,14 @@
+# trojan-gfw-centos-8
+
+## Usage
+ 
+```
+sudo yum -y install wget && wget https://raw.githubusercontent.com/lionlibr/trojan-gfw-centos-8/master/install.sh && sudo bash install.sh
+```
+
+### Overview
+
+1. Set TCP congestion control to BBR
+2. Install and configure firewalld
+3. Install and configure nginx
+4. Install and configure Trojan
