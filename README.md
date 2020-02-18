@@ -8,6 +8,8 @@ sudo yum -y install wget && wget https://raw.githubusercontent.com/lionlibr/troj
 
 ### Overview
 
+This script assumes that you start with a brand new server running CentOS 8.
+
 1. Set TCP congestion control to BBR
 2. Install and configure firewalld
 3. Install and configure nginx
