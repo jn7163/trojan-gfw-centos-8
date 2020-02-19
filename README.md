@@ -36,3 +36,7 @@ journalctl -u trojan
 
 tail /var/log/nginx/error.log
 ```
+
+## Common Error Messages
+
+https://github.com/trojan-gfw/trojan/wiki/What-the-heck-do-these-logs-mean%3F
