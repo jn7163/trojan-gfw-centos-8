@@ -40,3 +40,55 @@ tail /var/log/nginx/error.log
 ## Common Error Messages
 
 https://github.com/trojan-gfw/trojan/wiki/What-the-heck-do-these-logs-mean%3F
+
+## Backout Plan
+
+This backout plan should be used with caution if other services are already running on the server, as it may have unintended effects on them if they use the same components.
+
+### BBR
+
+```
+rm etc/sysctl.d/50-bbr.conf
+sysctl -p
+```
+
+### FirewallD
+
+```
+systemctl stop firewalld
+systemctl disable firewalld
+yum remove firewalld
+```
+
+### Nginx
+
+```
+systemctl stop nginx 
+systemctl disable nginx
+yum remove nginx
+rm /etc/nginx/default.d/requests.conf
+rm /etc/nginx/nginx.conf
+rm /etc/nginx/default.d/404.conf
+rm -rf /usr/share/nginx/html/*
+```
+
+The next command entirely removes all Let’s Encrypt certificates and keys from the server.
+
+```
+rm -rf /etc/letsencrypt
+```
+
+Manually remove the `certbot-auto renew` line from crontab:
+
+```
+vi /etc/crontab
+```
+
+### Trojan
+
+```
+systemctl stop trojan 
+systemctl disable trojan 
+rm /usr/local/etc/trojan/config.json
+rm trojan-quickstart.sh
+```
