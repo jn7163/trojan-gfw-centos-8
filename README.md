@@ -50,7 +50,7 @@ This backout plan should be used with caution if other services are already runn
 ### BBR
 
 ```
-rm etc/sysctl.d/50-bbr.conf
+rm /etc/sysctl.d/50-bbr.conf
 sysctl -p
 ```
 
