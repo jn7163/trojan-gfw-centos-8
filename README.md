@@ -43,6 +43,8 @@ https://github.com/trojan-gfw/trojan/wiki/What-the-heck-do-these-logs-mean%3F
 
 ## Backout Plan
 
+If possible, reimage the server, as it is safer than trying to remove individual components.
+
 This backout plan should be used with caution if other services are already running on the server, as it may have unintended effects on them if they use the same components.
 
 ### BBR
