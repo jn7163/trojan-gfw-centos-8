@@ -92,5 +92,6 @@ vi /etc/crontab
 systemctl stop trojan 
 systemctl disable trojan 
 rm /usr/local/etc/trojan/config.json
+rm /usr/local/bin/trojan
 rm trojan-quickstart.sh
 ```
