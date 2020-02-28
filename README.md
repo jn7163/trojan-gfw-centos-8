@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=68aP4RpZDVs
 
 ## Overview
 
-This script assumes that you start with a brand new server running CentOS 8.
+This script assumes that you start with a brand new server running CentOS 8. It is not advisable to run this script on a server that already has other applications running on it. The script carries out four actions:
 
 1. Set TCP congestion control to BBR
 2. Install and configure firewalld
